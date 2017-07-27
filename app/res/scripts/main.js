@@ -34,7 +34,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext('2d');
 
 var main = new Image();
-main.src = 'res/main.png';
+main.src = 'res/main.jpg';
 var pointerb = new Image();
 pointerb.src = 'res/pointer-below.png';
 var pointerm = new Image();
@@ -78,8 +78,8 @@ function draw() {
 	context.drawImage(pointer, xo, yo,
 		pointer.width * scale, pointer.height * scale);
 
-	var fontsize = 100;
-	context.font = (scale * fontsize) + "px Tahoma";
+	var fontsize = 66;
+	context.font = (scale * fontsize) + "px Arial";
 	context.fillStyle = 'white';
 	context.textAlign = 'center';
 	context.fillText(input.value, xo + pointer.width * scale * 0.5574, yo + pointer.height * 0.4253 * scale + (scale * fontsize * 0.35));
