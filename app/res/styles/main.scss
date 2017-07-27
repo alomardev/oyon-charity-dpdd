@@ -1,0 +1,71 @@
+@import 'vars';
+@import 'mixins';
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	*:focus {
+		outline: 0;
+	}
+	html {
+		height: 100%;
+	}
+	body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #D4D4D4
+	}
+	.card {
+		background: white;
+		border-radius: 10px;
+		border: solid 1px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	}
+	#canvas {
+		margin: 10px;
+		border: solid 1px rgba(0, 0, 0, 0.5);
+	}
+	.inputs {
+		border-top: solid 1px rgba(0, 0, 0, 0.5);
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.inputs label {
+		display: block;
+	}
+	.inputs label:nth-child(2) {
+		margin-right: 10px;
+		flex: 1 0 auto;
+	}
+	input[type=number] {
+		display: inline-block;
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: solid 1px rgba(0, 0, 0, 0.5);
+		box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+	}
+	input[type=number]:focus {
+		border-color: #1F87B3;
+		box-shadow: 0 0 8px #66B3D3;
+	}
+	button {
+		cursor: pointer;
+		display: block;
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: solid 1px rgba(0, 0, 0, 0.5);
+		background-color: #2389B4;
+		color: white;
+	}
+	button:hover {
+		background-color: #2BAAE0;
+		color: inherit;
+	}

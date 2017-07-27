@@ -1,0 +1,17 @@
+@@include("./_top.html", {"title": "Dynamic Pointer Donation Design"})
+<!-- body open -->
+<div class='container'>
+	<div class='card'>
+	<canvas id='canvas' width='500' height='650'></canvas>
+	<div class='inputs'>
+		<label>عدد الأسهم: <input id='donations' type='number' value='50' onchange='update();' style='width: 100px'></label>
+		<label>الحجم: <input id='scale' type='number' value='15' onchange='update();' style='width: 50px'>%</label>
+		<button onclick='exportImage();'>تحميل</button>
+	</div>
+	<img id='holder'>
+	</div>
+</div>
+<!-- body close -->
+@@include("./_bottom.html", {
+	"scripts": ["./res/jquery.js","./res/main.js"]
+})
